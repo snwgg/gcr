@@ -2,18 +2,21 @@ body {
     font-family: 'League Spartan', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #FFFFFF;
     color: #240464;
-    background-color: #fff;
 }
 
 header {
-    background-color: #FFD425;
-    padding: 20px;
+    background-color: #240464;
+    color: #FFD425;
+    text-align: center;
+    padding: 20px 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -23,68 +26,77 @@ nav ul li {
 }
 
 nav ul li a {
+    color: #FFD425;
     text-decoration: none;
-    color: #240464;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .logo {
-    text-align: center;
     margin: 20px 0;
+    height: 100px; /* Espaço para o logo */
 }
 
 .carousel {
     display: flex;
     overflow: hidden;
     width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
+    position: relative;
 }
 
 .carousel-item {
     min-width: 100%;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease;
 }
 
 .carousel-item img {
     width: 100%;
-    display: block;
+    height: auto;
 }
 
 .carousel-item a {
-    display: block;
-    text-align: center;
-    margin: 10px 0;
-    color: #240464;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #240464;
+    color: #FFD425;
+    padding: 10px 20px;
+    text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 main {
-    max-width: 800px;
-    margin: 20px auto;
     padding: 20px;
     text-align: center;
 }
 
-main h1, main h2, main h3 {
+h1, h2 {
     font-family: 'Pacifico', cursive;
+    color: #240464;
 }
 
-main ul {
+ul {
     list-style: none;
     padding: 0;
 }
 
-main ul li {
+ul li {
     margin: 10px 0;
-    font-size: 1.2em;
+}
+
+i {
+    color: #FFD425;
+    margin-right: 10px;
 }
 
 footer {
     background-color: #240464;
-    color: #fff;
+    color: #FFD425;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
 footer a {
